@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Space+Mono&display=swap");
+
+body {
+    margin: 0 auto;
+}
+
+body,
+.nav__ul,
+button {
+    font-family: "Nunito", sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 2px -2px #d5bdaf;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.logo {
+    width: 4%;
+    height: 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 4%;
+}
+
+.overhall {
+    display: flex;
+    justify-content: space-between;
+}
