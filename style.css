@@ -14,12 +14,15 @@ ul {
     list-style: none;
     display: flex;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 
-header {
+header > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     box-shadow: 0 4px 2px -2px #d5bdaf;
 }
 
@@ -67,6 +70,12 @@ nav {
     font-weight: 600;
 }
 
+.nav__button:hover {
+    background-color: #fb5607;
+    color: white;
+    transition: 0.8s;
+}
+
 .overhall__button {
     width: 150px;
     height: 70px;
@@ -75,6 +84,11 @@ nav {
     color: white;
     font-weight: 600;
     border-radius: 0 25px 25px 25px;
+}
+.overhall__button:hover {
+    background-color: white;
+    color: #fb5607;
+    transition: 0.8s;
 }
 
 .images {
@@ -88,9 +102,27 @@ img {
     height: 400px;
     border-radius: 10%;
     margin-top: 3%;
+    position: relative;
 }
 
 section > h2 {
     font-size: 80px;
     margin: 10px;
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.images > img:hover {
+    filter: grayscale(50%);
+    visibility: visible;
+    opacity: 1;
 }
